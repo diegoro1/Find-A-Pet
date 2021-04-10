@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #ff6b6b;
+  --secondary: #f7fff7;
+  --tertiary: #4ecdc4;
+  --quaternary: #1a535c;
+}
+
+.app {
+  background-color: var(--secondary);
+}

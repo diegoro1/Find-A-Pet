@@ -1,0 +1,45 @@
+@import "../../Main.css";
+
+.navtop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 10%;
+  background-color: white;
+}
+
+.navtop__logo {
+  font-size: 1.2rem;
+}
+
+.navtop__btn {
+  border: none;
+  background-color: transparent;
+  margin-left: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.7);
+  transition: all ease 0.3s;
+}
+.navtop__btn:hover,
+.navtop__btn:focus {
+  color: rgba(0, 0, 0, 1);
+}
+
+.navbottom {
+  display: flex;
+  padding: 0.8rem 10%;
+  text-transform: uppercase;
+  justify-content: space-between;
+  color: white;
+  background-color: var(--primary);
+}
+
+.navbottom__link {
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+.navbottom__link:hover,
+.navbottom__link:focus {
+  color: var(--quaternary);
+}
