@@ -1,11 +1,11 @@
-
+import logo from '../../assets/logo.png'
 import './Navbar.css';
 
 const Navbar = () => {
     return (
         <nav>
             <div className="navtop">
-                <div className="navtop__logo">Logo</div>
+                <img className="navtop__logo" src={logo} alt="Website-logo"/>
                 <div className="navtop__menu">
                     <button className="navtop__btn">Sign Up</button>
                     <button className="navtop__btn">Sign In</button>
