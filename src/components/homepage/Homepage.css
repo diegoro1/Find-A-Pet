@@ -1,0 +1,58 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 var(--horizontal-padding);
+  height: 50vh;
+  background: url(../../assets/family-dog.jpg);
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.2);
+}
+
+.banner__title {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  margin-bottom: 5%;
+}
+
+.banner__btn {
+  padding: 10px 100px;
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+  background-color: var(--primary);
+  border-radius: 40px;
+  transition: all ease 0.3s;
+}
+.banner__btn:hover,
+.banner__btn:focus {
+  background-color: var(--tertiary);
+  cursor: pointer;
+  transform: translateY(-0.5rem);
+}
+
+.pet-display {
+  padding: 50px var(--horizontal-padding);
+}
+
+.pet-display__title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.pet-display__cards {
+  display: flex;
+  padding: 40px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+}
+
+.pet-display__cards > * {
+  margin-right: 35px;
+}

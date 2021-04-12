@@ -1,4 +1,7 @@
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+
 import Navbar from './components/navbar/Navbar'
+import Homepage from './components/homepage/Homepage'
 
 import './Main.css';
 
@@ -7,10 +10,12 @@ function App() {
     <div className="app">
       <Navbar />
 
-
-      {/* Routes */}
-        {/* HomePage */}
-        {/* Search page */}
+      <Router>
+        <Switch>
+          <Route exact={true} path="/" component={Homepage}/>
+          {/* Search page */}
+        </Switch>
+      </Router>
     </div>
   );
 }

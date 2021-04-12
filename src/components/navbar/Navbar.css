@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 10%;
+  padding: 1rem var(--horizontal-padding);
   background-color: white;
 }
 
@@ -28,7 +28,7 @@
 
 .navbottom {
   display: flex;
-  padding: 0.8rem 10%;
+  padding: 0.8rem var(--horizontal-padding);
   text-transform: uppercase;
   justify-content: space-between;
   color: white;
