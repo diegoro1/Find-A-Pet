@@ -34,6 +34,7 @@
   background-color: var(--tertiary);
   cursor: pointer;
   transform: translateY(-0.5rem);
+  outline: none;
 }
 
 .pet-display {
@@ -55,4 +56,48 @@
 
 .pet-display__cards > * {
   margin-right: 35px;
+}
+
+.quiz-display {
+  padding: 40px var(--horizontal-padding);
+  background-color: white;
+}
+
+.quiz-display__title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.quiz-display__art-btn-wrapper {
+  padding: 35px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-display__art {
+  max-width: 350px;
+  height: auto;
+  margin-right: 30px;
+}
+
+.quiz-display__btn {
+  padding: 10px 50px;
+  min-width: 255px;
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+  background-color: var(--primary);
+  border-radius: 10px;
+  transition: all ease 0.3s;
+  margin: 30px 0;
+}
+.quiz-display__btn:hover,
+.quiz-display__btn:focus {
+  background-color: var(--tertiary);
+  cursor: pointer;
+  transform: translateY(-0.5rem);
+  outline: none;
 }

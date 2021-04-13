@@ -20,6 +20,7 @@
   cursor: pointer;
   color: rgba(0, 0, 0, 0.7);
   transition: all ease 0.3s;
+  outline: none;
 }
 .navtop__btn:hover,
 .navtop__btn:focus {
