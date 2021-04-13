@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import Navbar from './components/navbar/Navbar'
 import Homepage from './components/homepage/Homepage'
+import Footer from './components/footer/Footer'
 
 import './Main.css';
 
@@ -16,6 +17,8 @@ function App() {
           {/* Search page */}
         </Switch>
       </Router>
+
+      <Footer />
     </div>
   );
 }
