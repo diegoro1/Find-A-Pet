@@ -1,0 +1,34 @@
+footer {
+  padding: 50px var(--horizontal-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--tertiary);
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 50px;
+  color: white;
+}
+
+.links__link {
+  margin: 0 20px;
+  transition: all ease 0.3s;
+}
+
+.copy-right {
+  color: white;
+  transition: all ease 0.3s;
+}
+
+.links__link:hover,
+.links__link:focus,
+.copy-right:hover,
+.copy-right:focus {
+  text-decoration: underline;
+  cursor: pointer;
+}
