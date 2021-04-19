@@ -1,7 +1,18 @@
+import { useState } from 'react';
 import logo from '../../assets/logo.png'
 import './Navbar.css';
 
 const Navbar = () => {
+
+    // Click handlers for mobile navbars
+    const [topNavClick, setTopNavClick] = useState(false);
+    const handleTopNavClick = () => setTopNavClick(!topNavClick);
+    const closeTopMenu = () => setTopNavClick(false);
+
+    const [bottomNavClick, setBottomNavClick] = useState(false);
+    const handleBottomNavClick = () => setBottomNavClick(!bottomNavClick);
+    const closeBottomMenu = () => setBottomNavClick(false);
+
     return (
         <nav>
             <div className="navtop">
