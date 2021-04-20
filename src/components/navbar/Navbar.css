@@ -45,11 +45,22 @@
   color: var(--quaternary);
 }
 
+.navtop__mobile-menu {
+  display: none;
+  font-size: 1.7rem;
+  margin-right: 20px;
+}
+
 @media (max-width: 700px) {
-  .navtop__menu.active {
-    left: -0.1%;
-    background-color: white;
+  .icon {
     display: block;
+    size: 500px;
+  }
+
+  .navtop__menu.active {
+    left: 0;
+    background-color: white;
+    transition: all 0.5s ease;
   }
 
   .navtop__menu {
@@ -58,9 +69,7 @@
     width: 100%;
     position: absolute;
     top: 128px;
-    right: -100%;
-    display: none;
-    background-color: green;
+    left: -100%;
     transition: all 0.5s ease;
   }
 
@@ -68,5 +77,9 @@
     width: 100%;
     padding: 20px;
     margin: 0;
+  }
+
+  .navtop__mobile-menu {
+    display: block;
   }
 }
