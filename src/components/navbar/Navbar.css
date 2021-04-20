@@ -51,10 +51,20 @@
   margin-right: 20px;
 }
 
+.navbottom__link-drop {
+  display: none;
+}
+
 @media (max-width: 700px) {
   .icon {
     display: block;
     size: 500px;
+  }
+
+  .navtop {
+    z-index: 50 !important;
+    position: absolute;
+    width: 96%;
   }
 
   .navtop__menu.active {
@@ -81,5 +91,29 @@
 
   .navtop__mobile-menu {
     display: block;
+  }
+
+  .navbottom {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 96%;
+    z-index: 1;
+    top: -165px;
+    transition: all 0.5s ease;
+  }
+
+  .navbottom.active {
+    top: 128px;
+    transition: all 0.5s ease;
+  }
+
+  .navbottom__link-drop {
+    display: block;
+    font-size: 1.7rem;
+  }
+
+  .navbottom__link {
+    padding: 20px;
   }
 }

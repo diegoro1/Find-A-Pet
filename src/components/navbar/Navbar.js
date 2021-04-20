@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import logo from '../../assets/logo.png'
 import './Navbar.css';
-import { FaBars, FaTimes } from 'react-icons/fa'
+import { FaBars, FaTimes, FaAngleDown, FaAngleUp } from 'react-icons/fa'
 
 const Navbar = () => {
 
@@ -29,12 +29,18 @@ const Navbar = () => {
                     }
                 </div>
             </div>
-            <div className="navbottom">
+            <div className={bottomNavClick ? "navbottom active" : "navbottom"}>
                 <div className="navbottom__link">about adoptions</div>
                 <div className="navbottom__link">dog breeds</div>
                 <div className="navbottom__link">cat breeds</div>
                 <div className="navbottom__link">pet care</div>
                 <div className="navbottom__link">shelters near me</div>
+                <div className="navbottom__link-drop" onClick={handleBottomNavClick}>
+                    {
+                        bottomNavClick ? (<FaAngleUp className="icon"/>) : 
+                                        (<FaAngleDown className="icon"/>)
+                    }
+                </div>
             </div>
         </nav>
     )
