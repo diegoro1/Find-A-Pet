@@ -30,11 +30,11 @@ const Navbar = () => {
                 </div>
             </div>
             <div className={bottomNavClick ? "navbottom active" : "navbottom"}>
-                <div className="navbottom__link">about adoptions</div>
-                <div className="navbottom__link">dog breeds</div>
-                <div className="navbottom__link">cat breeds</div>
-                <div className="navbottom__link">pet care</div>
-                <div className="navbottom__link">shelters near me</div>
+                <div className="navbottom__link" onClick={closeBottomMenu}>about adoptions</div>
+                <div className="navbottom__link" onClick={closeBottomMenu}>dog breeds</div>
+                <div className="navbottom__link" onClick={closeBottomMenu}>cat breeds</div>
+                <div className="navbottom__link" onClick={closeBottomMenu}>pet care</div>
+                <div className="navbottom__link" onClick={closeBottomMenu}>shelters near me</div>
                 <div className="navbottom__link-drop" onClick={handleBottomNavClick}>
                     {
                         bottomNavClick ? (<FaAngleUp className="icon"/>) : 
